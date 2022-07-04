@@ -106,9 +106,7 @@ select {
 
 /* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
 /* Page Layout choices */
-.banner {
-    /* height: 11rem; */
-}
+
 /* Component Layout choices */
 .banner__logo {
     width: 12rem;
@@ -125,6 +123,20 @@ select {
 
 .main-content__paragraph {
     margin-top: 2rem;
+}
+
+.main-content__list {
+    padding-left: 1rem;
+}
+
+.main-content__table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: fit-content;
+}
+
+.main-content__table__head__row *:nth-child(3) {
+    width: 50%;
 }
 
 /* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
@@ -153,16 +165,18 @@ select {
 .related-content__article__1 {
     /* padding: 5rem; */
     width: 400px;
-    height: 300px;
+    height: 250px;
     background-image: url(../images/monitor.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .related-content__article__2 {
-    padding: 5rem;
+    width: 400px;
+    height: 250px;
     background-image: url(../images/graph.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
