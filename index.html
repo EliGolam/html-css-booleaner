@@ -21,24 +21,90 @@
 Order: [ Main BLOCK Class ] [ other BLOCK Classes ] [ Utility/Design Classes ] 
 Logical choice to make things look more organized, but they are not fundamental -->
 <body>
+    <!-- HEADER -->
     <header>
-        <figure>
-            <img src="./images/tim-1.jpg" alt="Photo of Tim Berners-Lee while giving a speech" class="header__photo">
-            <img src="./images/tim-2.jpg" alt="Frontal photo of Tim Berners-Lee" class="header__photo">
-            <figcaption class="header__photo__caption">1st Photo: John S. and James L. Knight Foundation, by Scott Henrichsen</figcaption>
-            <figcaption class="header__photo__caption">2nd Photo: Wikimedia, by Paul Clarke</figcaption>
-        </figure>
+        <!-- Banner containing Logo -->
+        <div class="banner">
+            <img src="./images/logo.svg" alt="Logo di The Booleaner" class="banner__logo" />
+        </div>
 
+        <!-- Article title -->
         <section class="title">
             <h1 class="title__main">Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee</h1>
             <h2 class="title__author">Scritto da <a href="#" target__blank class="subtitle__link">The Booleaner</a></h2> <!-- Clickable link "The Booleaner" that takes back to the Home page -->
             <h3 class="title__date">il 04/07/2022</h3>
-        </section>        
+        </section>
+        
+        <!-- Article main photos -->
+        <figure>
+            <img src="./images/tim-1.jpg" alt="Photo of Tim Berners-Lee while giving a speech" class="header__photo" />
+            <img src="./images/tim-2.jpg" alt="Frontal photo of Tim Berners-Lee" class="header__photo" />
+            <figcaption class="header__photo__caption">1st Photo: John S. and James L. Knight Foundation, by Scott Henrichsen</figcaption>
+            <figcaption class="header__photo__caption">2nd Photo: Wikimedia, by Paul Clarke</figcaption>
+        </figure>
+        <!-- Semantic HTML is used to give more structure to the code -->
     </header>
+    <!-- end HEADER -->
 
+    <!-- MAIN -->
     <main>
+        <div class="main-content">
+            <!-- Section 1: paragraph1 -->
+            <p class="main-content__paragraph"></p>
+            <!-- Section 2: unordered list -->
+            <ul class="main-content__list">
+                <li class="main-content__element"></li>
+                <li class="main-content__element"></li>
+                <li class="main-content__element"></li>
+            </ul>
 
+            <!-- Section 3: table -->
+            <table class="main-content__table">
+                <!-- table head section -->
+                <thead class="main-content__table__head">
+                    <tr class="main-content__table__head__row">
+                        <th class="main-content__table__head__cell"></th>
+                        <th class="main-content__table__head__cell"></th>
+                        <th class="main-content__table__head__cell"></th>
+                    </tr>
+                </thead>
+
+                <!-- table body section -->
+                <tbody class="main-content__table__body">
+                    <tr class="main-content__table__body__row">
+                        <td class="main-content__table__body__cell"></td>
+                        <td class="main-content__table__body__cell"></td>
+                        <td class="main-content__table__body__cell"></td>
+                    </tr>
+                    <tr class="main-content__table__body__row">
+                        <td class="main-content__table__body__cell"></td>
+                        <td class="main-content__table__body__cell"></td>
+                        <td class="main-content__table__body__cell"></td>
+                    </tr>
+                    <tr class="main-content__table__body__row">
+                        <td class="main-content__table__body__cell"></td>
+                        <td class="main-content__table__body__cell"></td>
+                        <td class="main-content__table__body__cell"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Section 4: paragraph2 -->
+            <p class="main-content__paragraph"></p>
+        </div>
+
+        <!-- Section 5: related content -->
+        <div class="related-content">
+            <article class="related-content__article">
+                <h2 class="related-content__article__title"></h2>
+            </article>
+            <article class="related-content__article">
+                <h2 class="related-content__article__title"></h2>
+            </article>
+        </div>
+        
     </main>
+    <!-- end MAIN -->
 </body>
 
 </html>
