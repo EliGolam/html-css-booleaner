@@ -123,8 +123,8 @@ select {
     width: fit-content;
 }
 
-.main-content__table__cell {
-    border: solid var(--clr-neutral-black);
+.main-content__paragraph {
+    margin-top: 2rem;
 }
 
 /* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
@@ -148,13 +148,26 @@ select {
 .subtitle__link {
     text-decoration: none;
 }
+
+.related-content__article__1 {
+    padding: 5rem;
+    background-image: url(../images/monitor.jpg);
+    background-repeat: no-repeat;
+}
+
+.related-content__article__2 {
+    padding: 5rem;
+    background-image: url(../images/graph.jpg);
+    background-repeat: no-repeat;
+}
+
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
 .background-primary {
-    background: var(--clr-neutral-white);
+    background: var(--clr-primary);
 }
 
 .background-secondary {
-    background: var(--clr-neutral-black);
+    background: var(--clr-secondary);
 }
 
 .color-primary {
