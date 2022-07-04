@@ -1,12 +1,12 @@
 /* Root pseudoclass custom properties: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 :root {
     /* Website Color Scheme */
-    --clr-primary: rgba(87, 242, 178, 1);
-    --clr-secondary: rgba(250, 174, 95, 1);
+    --clr-primary: rgba(50, 159, 219, 0.91);
+    --clr-secondary: rgba(172, 230, 240, 0.9);
 
     --clr-neutral-white: rgba(246, 242, 233, 1);
     --clr-neutral-black: rgba(25, 25, 25, 1);
-    --clr-neutral-grey: rgba(88, 89, 90, 1);
+    --clr-neutral-grey: rgba(105, 106, 112, 0.8);
 
     --fontfamily-primary: Arial, Helvetica, sans-serif;
 
@@ -14,7 +14,7 @@
     --fontweight-normal: 400;
     --fontweight-heavy: 700;
 
-    --fontsize-small: 0.7rem;
+    --fontsize-small: 0.6rem;
     --fontsize-normal: 1.1rem;
     --fontsize-large: 2rem;
     --fontsize-title: 3rem;
@@ -62,6 +62,9 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+
+  color: var(--clr-neutral-black);
+  font-size: var(--fontsize-normal);
 }
 
 /* A elements that don't have a class get default styles */
@@ -103,10 +106,48 @@ select {
 
 /* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
 /* Page Layout choices */
-
+.banner {
+    height: 11rem;
+}
 /* Component Layout choices */
+.banner__logo {
+    width: 12rem;
+}
+
+.header__main-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header__photos {
+    width: fit-content;
+}
+
+.main-content__table__cell {
+    border: solid var(--clr-neutral-black);
+}
 
 /* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
+.banner-background {
+    background-color: var(--clr-primary);
+    background-image: url(../images/pattern.png);
+}
+
+.title__main {
+    font-size: var(--fontsize-large);
+}
+
+.title__date {
+    font-size: var(--fontsize-small);
+}
+
+.header__photo__caption {
+    font-size: var(--fontsize-small);   
+}
+
+.subtitle__link {
+    text-decoration: none;
+}
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
 .background-primary {
     background: var(--clr-neutral-white);
@@ -126,6 +167,30 @@ select {
 
 .color-neutral {
     color: var(--clr-neutral-grey);
+}
+
+.text-color-black {
+    color: var(--clr-neutral-black);
+}
+
+.text-color-grey {
+    color: var(--clr-neutral-grey);
+}
+
+.text-color-white {
+    color: var(--clr-neutral-white);
+}
+
+.text-color-secondary {
+    color: var(--clr-secondary);
+}
+
+.text-small {
+    font-size: var(--fontsize-small);
+}
+
+.text-large {
+    font-size: var(--fontsize-large);
 }
 
 /* BLOCKS: component specific rules */
