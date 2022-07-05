@@ -26,7 +26,19 @@ Buon lavoro!
 
 # Document Outline
 
-## Banner
+## Banner (Header banner)
 
-Contains **banner image** and **Logo**
+> Contains **banner image** and **Logo**
+
+## Main 
+
+### Header (Article Title) 
+
+> Article Title
+> Article Subtitle
+> Article Data
+
+### Figure (Main Photos)
+
+> Two Photos of Tim
 
