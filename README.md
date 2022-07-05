@@ -1,5 +1,7 @@
 # html-css-booleaner
-Boolean Exercise: 04/07/2022: 
+
+## Boolean Exercise: 04/07/2022: 
+
 Esercizio
 Riproducete il il layout in allegato utilizzando l'approccio visto in classe.
 Fate un piccolo blocco alla volta aggiungendo ad ogni step le regole css.
@@ -20,3 +22,11 @@ Attenzione: per i nomi dei file usate sempre lettere minuscole e trattini al pos
 4. Sempre nella cartella repo create la cartella css nella quale inserirete creandolo/i il/i vostri file css.
 Ricordatevi di pushare di tanto in tanto per consegnare il vostro lavoro in modo incrementale.
 Buon lavoro!
+
+
+# Document Outline
+
+## Banner
+
+Contains **banner image** and **Logo**
+
